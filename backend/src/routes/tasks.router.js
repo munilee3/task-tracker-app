@@ -35,7 +35,7 @@ router.get('/', (req, res) => {
 
 
 // PATCH /tasks/:id
-router.patch('task/:id', (req, res) => {
+router.patch('/:id', (req, res) => {
     const id = Number(req.params.id);
     const { status, priority } = req.body;
     try {
